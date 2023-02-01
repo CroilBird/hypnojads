@@ -1,0 +1,33 @@
+title:BatKnife - HOME
+user:xXx|knifeLeon|xXx
+background-color:#725F43
+music:sound/bgm/Bat vs Knife.ogg
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;xXx|knifeLeon|xXx's status
+p:b:0:15
+s:jphpog:Flail DLC leak?????
+p:b:0:15
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:Bat VS Knife!
+hr:#FFD79B
+t:'Press Start 2P', cursive:var(--regular-text-size):center:#FFCD80:About the game
+hr:#FFD79B
+t:'Press Start 2P', cursive:var(--smaller-text-size):left:#FFD79B:If you've been living under a rock and don't know what Bat VS Knife is&colon; Bat vs Knife is the hottest game in sleeptime computing right now. The game is the ultimate test in your ability to maneuver with a weapon of your choice and a trial to see which one of the weapons is best. A short description of the weapons and pro's/cons&colon;
+p:b:0:15
+ti:left:'Press Start 2P', cursive:var(--smaller-text-size):left:#FFD79B:Bats do less damage than knives, but are easier to use. It is more likely you will hit your opponent using a bat than a knife, but since the '99 update bats <u>inflict no critical hits!</u> Because of this it is no longer possible to run strats such as infinibat. Bat builds rely heavily on acquiring as many flat damage items and skills as possible. Nevertheless since bats do so much damage and do not require much training to use early on, often people will rush their opponent early game when they do not have many points in knifewielding. Knife users will therefore often fortify their base with as many low level minions as possible, to delay attack.:pages/BatKnife/bat.gif
+p:b:0:15
+ti:right:'Press Start 2P', cursive:var(--smaller-text-size):left:#FFD79B:Knives are the glass cannons of Bat VS Knife. Low damage, high crit! It takes a while to get used to using them though, and they have a chance of self-inflicting damage which forces you to commit a part of your item pool to healing items. Knives also have a strategic disadvantage as mentioned in the bats section where micromanaging some minions will be required in order to secure your base. Because of this knives are not recommended for newer players. Great lategame though, very strong against some of the thougher raid bosses.:pages/BatKnife/knife.gif
+hr:#FFD79B
+t:'Press Start 2P', cursive:var(--regular-text-size):center:#FFCD80:NEWS
+hr:#FFD79B
+tdc:'Press Start 2P', cursive:var(--regular-text-size):left:#FFD79B:<u>DLC LEAK??</u>:<u>DLC in production</u>
+p:b:0:15
+tdc:'Press Start 2P', cursive:var(--regular-text-size):left:#FFD79B:Date&colon; September 9, 1999<br><br>:Date&colon; March 14, 1999<br><br>
+p:b:0:15
+tdc:'Press Start 2P', cursive:var(--regular-text-size):left:#FFD79B:It's happening!!! Someone snuck a picture at the private showing of Armorsoft's game design seminar. Looks like we are getting a content update that involves the addition of a flail!! It only makes sense. Flail!<br><br><img src="pages/BatKnife/leak.png"><br><br>Whether this will be a new third weapon to shake up the strategy or some sort of power-up remains to be seen.:Armorsoft have announced that DLC for Bat VS Knife is in the works! They promise big changes to the game, but refuse to elaborate on what those changes are.<br><br>After the '99 update, the game is in a decent state (bat is a bit weak imho), but it could do with an extra player boost. Especially since recently released Internet Explorer Sleuth is drawing away players.
+p:b:0:60
+tdc:'Press Start 2P', cursive:var(--regular-text-size):center:#FFD79B:<u>The '99 update!</u>:<u>Dead game?</u>
+p:b:0:15
+tdc:'Press Start 2P', cursive:var(--regular-text-size):left:#FFD79B:Date&colon; December 1, 1998<br>:Date&colon; August 17, 1998<br>
+p:b:0:30
+tdc:'Press Start 2P', cursive:var(--regular-text-size):left:#FFD79B:Not a dead game! Armorsoft has released an update to Bat VS Knife with many balance fixes. I don't think the bat should have been nerfed but okay. Some important changes&colon;<ul><li>Removed crits from bats</li><li>Added a skill tree to each weapon specialization</li><li>Knife now no longer breaks glass. Instead cuts glass.</li><li>Increased vehicle speed</li></ul>:I started this news thing about a year ago, half a year after Bat VS Knife came out. But there has been nothing from Armorsoft about any updates or content additions to the game. Don't get me wrong, they nailed it. The balance is perfect as it is so no updates are really necessary, but it would help to shake up things a bit for the dwindling userbase...
+p:b:0:200

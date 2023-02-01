@@ -1,0 +1,23 @@
+title:Anime Den
+user:PrincessLulu1313
+background:#190613 url('pages/AnimeDen/bg.png')
+music:sound/bgm/ayaya.ogg
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;PrincessLulu1313's status
+p:b:0:15
+s:ayaya:Can't wait for the new season of Kokoro no Yume&colon; my mother is both an eldritch horror as well as an automobile!?
+p:b:0:15
+i:0:0:100%:auto:pages/AnimeDen/ayaya.gif:AYAYA
+t:'Press Start 2P', cursive:var(--regular-text-size):center:#CC3399:Welcome to anime den uwu. This is where all the cultured hang out. Any kind of anime goes, from slice of life to monster girl isekai. Loli is ok but keep it to a minimum. No vtubers.
+p:b:0:30
+tm:'Press Start 2P', cursive:var(--biggerest-text-size):center:var(--pale-yellow):--GREAT NEWS--
+p:b:0:15
+ti:left:'Press Start 2P', cursive:var(--smaller-text-size):left:#CC3399:Thanks to Slurel, Bokusatsu Tenshi Dokuro-chan has made its way into the marble pool! There is a real chance that instead of the myazaki movies or other basic shit Joe gets to see some real hard hitting anime.<br><br>If you're not aware of the genius of this anime, here is a plot summary&colon;<br><br>Our protagonist, 13yo Sakura Kusakabe, is set to develop a technology that halts aging of women when they reach 12 years old. This invokes the wrath of god, who sends out an angel to kill Kusakabe. However, the angel, angelic as she is, sees a chance for redeption in Kusakabe, and instead vows to keep him as distracted as possible so he may not invent the aging-halting technology.<br><br>:pages/AnimeDen/animecover.png
+t:'Press start 2P', cursive:var(--smaller-text-size):left:#CC3399:That's just the gist of it; there is much more to the story than this! I can't wait for Joe to watch this. This anime will have him saying "Pipiru-piru-piru-pipiru-pii" in no time!
+p:b:0:15
+hr:#CC3399
+p:b:0:15
+t:'Press start 2P', cursive:var(--smaller-text-size):center:#CC3399:Here are the current marbles and their champions (provided by Caps)&colon;<br><ul><li>Batman Ninja - Spanduley</li><li>Neon Genesis Evangelion - kiriagi862</li><li>Mob Psycho 100 - KarlSaber3</li><li>Yuru Camp - Howyudoinn</li><li>Hayao Miyazaki's (11) movies - AltalRRR</li><li>Master of Martial Hearts - Vixit_art</li><li>Haven't You Heard I'm Sakamoto? - Ziker5</li><li>DNA^2 - Gordot_Forrot</li><li>Bokusatsu Tenshi Dokuro-chan - Slurel</li><li>Steins;Gate - Slurel</li><li>Kill la Kill - Slurel</li><li>Tengen Toppa Gurren Lagann - Gordot_Forrot</li><li>Higurashi (all seasons) - yandexanime</li><li>Code Geass - Riorii</li><li>Mawaru Penguindrum - Joseph Anderson</li><li>Kaiji - juniorboomer</li><li>Nichijou - insertdisc5</li></ul>
+p:b:0:1000
+t:'Press start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣬⡛⣿⣿⣿⣯⢻ <br>⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢻⣿⣿⢟⣻⣿⣿⣿⣿⣿⣿⣮⡻⣿⣿⣧ <br>⣿⣿⣿⣿⣿⢻⣿⣿⣿⣿⣿⣿⣆⠻⡫⣢⠿⣿⣿⣿⣿⣿⣿⣿⣷⣜⢻⣿ <br>⣿⣿⡏⣿⣿⣨⣝⠿⣿⣿⣿⣿⣿⢕⠸⣛⣩⣥⣄⣩⢝⣛⡿⠿⣿⣿⣆⢝ <br>⣿⣿⢡⣸⣿⣏⣿⣿⣶⣯⣙⠫⢺⣿⣷⡈⣿⣿⣿⣿⡿⠿⢿⣟⣒⣋⣙⠊ <br>⣿⡏⡿⣛⣍⢿⣮⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿ <br>⣿⢱⣾⣿⣿⣿⣝⡮⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⣋⣻⣿⣿⣿⣿ <br>⢿⢸⣿⣿⣿⣿⣿⣿⣷⣽⣿⣿⣿⣿⣿⣿⣿⡕⣡⣴⣶⣿⣿⣿⡟⣿⣿⣿ <br>⣦⡸⣿⣿⣿⣿⣿⣿⡛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿ <br>⢛⠷⡹⣿⠋⣉⣠⣤⣶⣶⣿⣿⣿⣿⣿⣿⡿⠿⢿⣿⣿⣿⣿⣿⣷⢹⣿⣿ <br>⣷⡝⣿⡞⣿⣿⣿⣿⣿⣿⣿⣿⡟⠋⠁⣠⣤⣤⣦⣽⣿⣿⣿⡿⠋⠘⣿⣿ <br>⣿⣿⡹⣿⡼⣿⣿⣿⣿⣿⣿⣿⣧⡰⣿⣿⣿⣿⣿⣹⡿⠟⠉⡀⠄⠄⢿⣿ <br>⣿⣿⣿⣽⣿⣼⣛⠿⠿⣿⣿⣿⣿⣿⣯⣿⠿⢟⣻⡽⢚⣤⡞⠄⠄⠄⢸⣿<br>
+p:b:0:400

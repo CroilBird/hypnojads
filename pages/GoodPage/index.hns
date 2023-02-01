@@ -1,0 +1,34 @@
+title:Very interesting page
+user:HighEffortContentMan
+musicaction:forcestop
+music:sound/bgm/Snail.ogg
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;HighEffortContentMan's status
+p:b:0:15
+s:joecry:sry idk why but th e page loads slow. wait for it.......
+p:b:0:15
+delayabs:10080
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:It's worth it though hold on
+delayabs:18150
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:Really just wait
+delayabs:33780
+i:0:0:100%:auto:pages/GoodPage/snail.gif:snail
+delayabs:33781
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:SNAIL
+delayabs:51420
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:This is what I'll show the chat
+delayabs:55460
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:Think they haven't seen it yet
+delayabs:59490
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:Blame it on my ISP baby
+i:0:0:100%:auto:pages/GoodPage/snail.gif:snail
+delayabs:67560
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:Maybe I just miss a lot
+delayabs:71590
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:Maybe I'm a gastropod
+delayabs:75630
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:Blame it on my ISP baby
+delayabs:82180
+t:'Press Start 2P', cursive:var(--biggerest-text-size):center:#FFD79B:SNAIL
+delayabs:82181
+i:0:0:100%:auto:pages/GoodPage/snail.gif:snail

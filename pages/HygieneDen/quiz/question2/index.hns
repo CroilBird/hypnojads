@@ -1,0 +1,17 @@
+title:QUESTION TWO - BIDET BOOGALOO
+music:sound/bgm/Lofi dryer chan beats to browse hypnospace to.ogg
+user:DryerChan
+background:#613258
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;DryerChan's status
+p:b:0:15
+s:ayaya:Remember to wash your hands 🎵🎵🎵
+p:b:0:15
+i:0:0:100%:auto:pages/HygieneDen/question2.gif:3D modeling is my passion
+tp:'Press Start 2P', cursive:var(--biggest-text-size):center:#121212:#FF0000:QUESTION TWO
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#F3F3F3:Good job! What about this one&colon; Bidet yes or no
+hr:#FFFFFF
+tdc:'Press Start 2P', cursive:var(--biggest-text-size):center:#FFFFFF:<br><a href="#/HygieneDen/quiz/fail">I do that thing dogs do on carpets</a><br><br>:<br><a href="#/HygieneDen/quiz/fail">Bidet more like Bid-nay</a><br><br><br>
+tdc:'Press Start 2P', cursive:var(--biggest-text-size):center:#FFFFFF:<a href="#/HygieneDen/quiz/question3">Bidet more like OK!</a><br><br>:<br><a href="#/HygieneDen/quiz/fail">Use the same towel as I use in the shower</a><br><br>
+hr:#FFFFFF
+p:b:0:200

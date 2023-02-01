@@ -1,0 +1,6 @@
+title:Page not found
+background-color:#222034
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):center:var(--pale-yellow):&nbsp;PAGE NOT FOUND
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):center:var(--pale-yellow):&nbsp;<u><a href="#/">&gt; CLICK HERE TO RETURN TO HOME &lt;</a></u>

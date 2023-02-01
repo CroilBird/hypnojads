@@ -1,0 +1,11 @@
+title:joms
+user:joms
+music:none
+musicaction:forcestop
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;joms's status
+p:b:0:15
+s:jomseph:joms
+p:b:0:15
+i:0:0:100%:auto:pages/joms/joms.gif:joms
+p:b:0:200

@@ -1,0 +1,912 @@
+:root {
+    /* colors */
+    --black-color: #121212;
+    --pale-yellow: #EBE4DD;
+    --less-pale-yellow: #dfd8d1;
+
+    --discussion-folder: #ecd5c1;
+    --discussion-comment-bg: #fafafa;
+
+    --hypnoos-primary: #9BC7F4;
+    --hypnoos-secondary: #884AD3;
+    --hypnoos-accent: #8890F5;
+    --hypnoos-window-title: #302454;
+    --hypnoos-alert-body-text: #5E4280;
+
+    --browser-url-color: #DCADF3;
+
+    /* window */
+    --border-size: 12px;
+    --titlebar-size: 35px;
+
+    /* scrollbar */
+    --scrollbar-width: 35px;
+    --scrollbar-border: 4px;
+
+    /* very specific info button things */
+    --info-button-width: 100px;
+    --info-button-content-margin: 10px;
+
+
+    /* inner body */
+    --inner-body-width: 1200px;
+
+    --window-title-text: 16pt;
+    --url-text: 16pt;
+    --page-title-text: 14pt;
+
+    /* font sizes */
+    --biggerest-text-size: 32pt;
+    --biggest-text-size: 24pt;
+    --bigger-text-size: 18pt;
+    --regular-text-size: 16pt;
+    --smaller-text-size: 12pt;
+    --smallest-text-size: 8pt;
+
+}
+
+body {
+    background-color: var(--black-color);
+    margin: 0px;
+    color: var(--pale-yellow);
+}
+
+a {
+    color: var(--pale-yellow);
+    text-decoration-line: none;
+}
+
+p, span {
+    color: var(--pale-yellow);
+}
+
+video {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+
+/* special effects, overlays, animations, etc */
+.load {
+    transform: scale(0.0);
+    animation: pulse 0.1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.disabled {
+    cursor: default !important;
+}
+.disabled::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100% - 4px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('img/ui/disabledoverlay.png');
+}
+
+.AudioCtrlPlayer.disabled::after {
+    width: 120px;
+}
+
+/* I have no idea */
+a.invisible {
+    color: inherit;
+    text-decoration-style: inherit;
+    text-decoration-line: inherit;
+}
+
+/* fonts */
+
+.digital {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* top level window */
+.window {
+    height: calc(100vh - var(--titlebar-size) - var(--border-size));
+    width: calc(100% - var(--border-size) * 2);
+    border-top: var(--titlebar-size) solid var(--hypnoos-primary);
+    border-left: var(--border-size) solid var(--hypnoos-primary);
+    border-right: var(--border-size) solid var(--hypnoos-primary);
+    border-bottom: var(--border-size) solid var(--hypnoos-primary);
+    background: var(--black-color);
+    position:relative;
+}
+.window:first-child:before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height: var(--titlebar-size);
+    background: linear-gradient(180deg, var(--hypnoos-primary) 0%, var(--hypnoos-primary) 55%, var(--hypnoos-accent) 55%, var(--hypnoos-accent) 100%);
+    top: calc(0px - var(--titlebar-size));
+    left: 0px;
+}
+
+/* top controls */
+.controls {
+    z-index: 1;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 80px;
+    top: calc(4px - var(--titlebar-size));
+    left: calc(4px - var(--border-size));
+    display: grid;
+    grid-template-columns: 0.0fr 2.6fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "Icon TitleBar"
+    "Icon UrlBar";
+}
+
+/* explorer icon */
+.Icon {
+    margin-top: 4px;
+    grid-area: Icon;
+    background-color: var(--black-color);
+}
+.Icon-img {
+    margin: 0px;
+    border: 4px solid var(--hypnoos-primary)
+}
+
+/* titlebar */
+.TitleBar {
+    grid-area: TitleBar;
+    color: var(--black-color);
+    background: linear-gradient(0deg, var(--hypnoos-accent) 0%, var(--hypnoos-accent) 15px, var(--hypnoos-primary) 15px);
+    margin-left: 5px;
+}
+
+.title-text {
+    color: var(--hypnoos-window-title);
+    font-size: var(--window-title-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* url bar */
+.UrlBar {
+    grid-area: UrlBar;
+    /* background-color: plum; */
+    height: 47px;
+    display: grid;
+    grid-template-columns: 0fr 1fr 0fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "Home URL Refresh";
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Home {
+    position: relative;
+    grid-area: Home;
+    cursor: pointer;
+}
+.URL {
+    grid-area: URL;
+    border-top: 4px var(--hypnoos-primary) solid;
+    border-bottom: 4px var(--hypnoos-primary) solid;
+    margin-bottom: 3px;
+    padding-top: 8px;
+    padding-left: 5px;
+    background-color: var(--hypnoos-secondary);
+    text-overflow: clip;
+}
+.url::after {
+    border-bottom: 4px var(--hypnoos-accent) solid;
+}
+.url-text {
+    color: #DCADF3;
+    font-size: var(--url-text);
+    vertical-align: middle;
+}
+.Refresh {
+    grid-area: Refresh;
+    border-top: 4px var(--hypnoos-primary) solid;
+    border-bottom: 4px var(--hypnoos-primary) solid;
+    border-right: 4px var(--hypnoos-primary) solid;
+    margin-bottom: 3px;
+    padding-right: 5px;
+    background-color: var(--hypnoos-secondary);
+}
+
+
+/* inner content / body */
+.inner {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0fr 1fr auto 0fr;
+    grid-template-rows: 77px auto;
+    gap: 0px 0px;
+    grid-template-areas:
+    "Controls Title User InfoCtrl"
+    "Body Body Body Body";
+}
+/* lower controls */
+.Lower-Controls {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr;
+    gap: 0px 10px;
+    grid-template-areas:
+    "back fwd stamp ban";
+    grid-area: Controls;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: var(--hypnoos-primary);
+    border-bottom: 4px var(--hypnoos-accent) solid;
+}
+
+/* back button */
+.back {
+    grid-area: back;
+    position: relative;
+    cursor: pointer;
+}
+
+/* forward button and image */
+.fwd {
+    grid-area: fwd;
+    position: relative;
+    cursor: pointer;
+}
+.fwd-img { transform: rotate(180deg); transform: scaleX(-1);}
+
+/* stamps/emotes */
+.stamp {
+    position: relative;
+    grid-area: stamp;
+}
+
+/* mark user for ban */
+.ban {
+    grid-area: ban;
+}
+
+/* page title */
+.Title {
+    grid-area: Title;
+    display: flex;
+    background-color: var(--hypnoos-primary);
+    justify-content: left center;
+    align-items: center;
+    height: 49px;
+    border-bottom: 4px var(--hypnoos-accent) solid;
+}
+.page-title {
+    color: #5A4280;
+    font-size: var(--page-title-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* user name */
+.User {
+    grid-area: User;
+    display: flex;
+    background-color: var(--hypnoos-primary);
+    justify-content: right center;
+    align-items: center;
+    text-align: right;
+    height: 49px;
+    border-bottom: 4px var(--hypnoos-accent) solid;
+    padding-right: 10px;
+}
+.user-name {
+    color: #5A4280;
+    font-size: var(--smaller-text-size);
+}
+
+/* user info ctr */
+.InfoCtrl {
+    grid-area: InfoCtrl;
+    height: 44px;
+    background-color: var(--hypnoos-primary);
+    border-bottom: 4px var(--hypnoos-accent) solid;
+    margin-right: var(--scrollbar-width);
+    padding-right: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+/* main body */
+.Body {
+    grid-area: Body;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    line-break: normal;
+    padding-right: var(--scrollbar-width);
+    margin-top: -24px;
+    background-color: var(--black-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". InnerBody .";
+}
+.InnerBody {
+    height: 100%;
+    width: var(--inner-body-width);
+    grid-area: InnerBody;
+}
+
+/* scrollbar */
+.scrollbar-container {
+    position: absolute;
+    top: 45px;
+    bottom: 0px;
+    right: 0;
+    width: calc(var(--scrollbar-width) - var(--scrollbar-border) * 2);
+    background-image: url("img/ui//scrollbg.png");
+    border: var(--scrollbar-border) #8649D2 solid;
+
+}
+.scrollbar-arrow-top {
+
+}
+.scrollbar-scroller {
+
+}
+.scrollbar-arrow-top {
+
+}
+
+/* page listings */
+.listing-item {
+    height: 125px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-bottom: 15px;
+    /* if there is a better way of doing this, don't tell me */
+    clip-path: polygon(25px 0, 100% 0, 100% 100%, 15px calc(100% - 0px), 15px calc(100% - 5px), 10px calc(100% - 5px), 10px calc(100% - 10px), 5px calc(100% - 10px), 5px calc(100% - 15px),  0px calc(100% - 15px), 0 25px, 5px 25px, 5px 20px, 10px 20px, 10px 15px, 15px 15px, 15px 10px, 20px 10px, 20px 5px, 25px 5px);
+
+}
+.ListingContainerHeader {
+    display: grid;
+    height: 24px;
+    gap: 0px 0px;
+    grid-template-columns: 1fr 0.1fr;
+    grid-template-areas:
+    "ListingTitle ListingUser";
+    border-bottom: 2px var(--black-color) solid;
+    cursor: pointer;
+}
+.ListingContainerContent {
+    display: grid;
+    height: 125px;
+    gap: 0px 0px;
+    grid-template-columns: 0fr 0fr 1fr;
+    grid-template-areas:
+    "ListingStamp ListingCount ListingDescription";
+    cursor: pointer;
+}
+.ListingTitle {
+    grid-area: ListingTitle;
+    height: 28px;
+    height: 24px;
+    padding-top: 2px;
+    padding-left: 30px;
+    width: fit-content;
+    font-family: 'Press Start 2P', cursive;
+    font-size: var(--regular-text-size);
+}
+.ListingUser {
+    grid-area: ListingUser;
+    height: 21px;
+    padding-top: 5px;
+    padding-right: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: right;
+}
+.ListingStamp {
+    grid-area: ListingStamp;
+    margin: 20px;
+    margin-right: 0px;
+    height: 60px;
+    width: 60px;
+}
+.ListingCount {
+    display: flex;
+    grid-area: ListingCount;
+    margin: 20px;
+    margin-left: 0px;
+    height: 60px;
+    width: 200px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: var(--bigger-text-size);
+    align-items: center;
+    padding-left: 5px;
+}
+.ListingDescription {
+    grid-area: ListingDescription;
+    margin: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: var(--bigger-text-size);
+}
+
+/* status box */
+.status-box {
+    display: grid;
+    width: 95%;
+    padding-left: 2.5%;
+    height: 125px;
+    gap: 0px 15px;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-areas:
+    "StatusStamp Status";
+}
+.StatusStamp {
+    grid-area: StatusStamp;
+    background-color: #575065;
+    border-right: 4px #312454 solid;
+    border-bottom: 4px #312454 solid;
+    border-radius: 4px;
+    background-size: auto;
+    background-repeat: round;
+    backdrop-filter: pixelate;
+}
+
+.Status {
+    grid-area: Status;
+    background-color: #575065;
+    border-right: 4px #312454 solid;
+    border-bottom: 4px #312454 solid;
+    border-radius: 4px;
+    color: #EBE4DD;
+    font-family: 'Press Start 2P', cursive;
+    font-size: var(--regular-text-size);
+    padding: 5px;
+}
+
+/* text elements */
+.text-with-image {
+    display: grid;
+}
+
+.TextWithImageText {
+    grid-area: TextWithImageText;
+}
+
+.TextWithImageImage {
+    grid-area: TextWithImageImage;
+}
+
+.double-column-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas: "LeftTextColumn RightTextColumn";
+}
+
+.LeftTextColumn {
+    grid-area: LeftTextColumn;
+}
+
+.LeftTextColumn img {
+    width: 100%;
+}
+
+.RightTextColumn {
+    grid-area: RightTextColumn;
+}
+
+.RightTextColumn img {
+    width: 100%;
+}
+
+/* audio control at bottom of page */
+.audio-control {
+    display: grid;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    grid-template-areas: "AudioCtrlPlayer AudioCtrlVolumeInfo";
+}
+
+.AudioCtrlPlayer {
+    grid-area: AudioCtrlPlayer;
+}
+
+.audio-ctrl-canvas {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.audio-ctrl-image {
+    position: relative;
+    z-index: 2;
+}
+
+.AudioCtrlVolumeInfo {
+    display: none;
+    grid-area: AudioCtrlVolumeInfo;
+    background: url('img/ui/sound-info-panel.png');
+    background-size: contain;
+    overflow: hidden;
+    padding: 10px;
+    width: 400px;
+    transform: scaleX(0%);
+    grid-template-rows: 1fr 0fr;
+    grid-template-areas: "AudioInfo"
+    "AudioVolumeControl";
+}
+.AudioCtrlVolumeInfo.open {
+    display: grid;
+    grid-area: AudioCtrlVolumeInfo;
+    transform: scaleX(100%);
+}
+
+/* god I love grids */
+
+.AudioInfo {
+    grid-area: AudioInfo;
+    width: 100%;
+    font-size: var(--smallest-text-size);
+}
+.audio-info-text {
+    color: var(--black-color);
+}
+
+.AudioVolumeControl {
+    grid-area: AudioVolumeControl;
+    width: 100%;
+}
+
+.audio-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(100% - 20px);
+    height: 10px;
+    background: var(--hypnoos-accent);
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 4px;
+  }
+
+  .audio-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 16px;
+    background: linear-gradient(0deg, var(--hypnoos-accent) 0%, var(--hypnoos-accent) 8px, var(--hypnoos-primary) 8px);
+    border-right: 2px var(--hypnoos-secondary) solid;
+    border-bottom: 2px var(--hypnoos-secondary) solid;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .audio-slider::-moz-range-thumb {
+    width: 40px;
+    height: 16px;
+    background: linear-gradient(0deg, var(--hypnoos-accent) 0%, var(--hypnoos-accent) 8px, var(--hypnoos-primary) 8px);
+    border-right: 2px var(--hypnoos-secondary) solid;
+    border-bottom: 2px var(--hypnoos-secondary) solid;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .audio-slider::-moz-range-thumb:hover {
+    opacity: 1;
+  }
+
+/* info box */
+.info {
+    display: grid;
+    position: absolute;
+    grid-template-areas: "InfoTitle"
+    "InfoContent";
+    grid-template-rows: 0.0fr 1fr;
+    top: calc(50% - 125px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 250px;
+    background-color: var(--hypnoos-primary);
+    border: 8px var(--hypnoos-primary) solid;
+}
+
+.info.hidden {
+    transform: scale(0%);
+}
+
+.info.visible {
+    animation: pulse 0.1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.InfoTitle {
+    grid-area: InfoTitle;
+    background: linear-gradient(0deg, var(--hypnoos-accent) 0%, var(--hypnoos-accent) 15px, var(--hypnoos-primary) 15px);
+}
+
+.info-title-text {
+    color: var(--black-color) !important;
+    padding-left: 10px;
+}
+
+.InfoContent {
+    grid-area: InfoContent;
+    border: 2px var(--hypnoos-secondary) solid;
+    padding: 5px;
+    color: var(--black-color) !important;
+    padding-right: 69px;
+}
+
+.info-content-text {
+    color: var(--hypnoos-alert-body-text);
+}
+
+.info-warning-image {
+    float: left;
+    padding: 15px;
+}
+
+.info-close {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    background: linear-gradient(0deg, var(--hypnoos-accent) 0%, var(--hypnoos-accent) 15px, var(--hypnoos-primary) 15px);
+    border-bottom: 2px var(--hypnoos-secondary) solid;
+}
+
+.info-close-buttn {
+    position: absolute;
+    right: 0px;
+}
+
+.info-bttn {
+    position: absolute;
+    height: 60px;
+    bottom: 10px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background: linear-gradient(0deg, var(--hypnoos-accent) 0%, var(--hypnoos-accent) 15px, var(--hypnoos-primary) 15px);
+    border-radius: 0px 0px 15px 0px;
+    border-top: 2px white solid;
+    border-left: 2px white solid;
+    cursor: pointer;
+}
+
+.info-bttn-inner {
+    display: flex;
+    align-items: center;
+    margin: var(--info-button-content-margin);
+    border-top: 2px var(--black-color) solid;
+    border-left: 2px var(--black-color) solid;
+    background-color: var(--hypnoos-secondary);
+    height: calc(100% - calc(var(--info-button-content-margin) * 2));
+    width: calc(100% - calc(var(--info-button-content-margin) * 2));
+}
+
+.info-btnn-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* keyframes */
+@keyframes pulse {
+    50%  {transform: scale(0.8);}
+    100%  {transform: scale(1);}
+}
+
+/* page listings */
+.discussion-item {
+    display: grid;
+    grid-template-areas: "DiscussionHeader"
+    "DiscussionContent"
+    "DiscussionFooter";
+    grid-template-rows: 0fr 1fr 0fr;
+    height: 165px;
+    width: calc(100% - 60px);
+    margin-left: 15px;
+    margin-bottom: 15px;
+    /* Hello person looking at the css for this page! if there is a better way of doing this, don't tell me. */
+    clip-path: polygon(0px 15px, 5px 15px, 5px 10px, 10px 10px, 10px 5px, 15px 5px, 15px 0px, 100px 0px, 100px 5px, 105px 5px, 105px 10px, 110px 10px, 110px 15px, 115px 15px, calc(100% - 20px) 15px, calc(100% - 20px) 20px, calc(100% - 15px) 20px, calc(100% - 15px) 25px, calc(100% - 10px) 25px, calc(100% - 10px) 30px, calc(100% - 5px) 30px, calc(100% - 5px) 35px, calc(100% - 0px) 35px, 100% 100%, 0px 100%, 0 calc(100% - 15px), 0 25px);
+    background-color: var(--discussion-folder);
+}
+.discussion-item.open {
+}
+.discussion-item.closedyes {
+    background: var(--discussion-folder) url('pages/DiscussionDen/closedyes.png');
+    background-repeat: no-repeat;
+    background-position: calc(50% + 50px);
+    background-size: 40%;
+}
+.discussion-item.closedno {
+    background: var(--discussion-folder) url('pages/DiscussionDen/closedno.png');
+    background-repeat: no-repeat;
+    background-position: calc(50% + 50px);
+    background-size: 40%;
+}
+
+.DiscussionHeader {
+    display: grid;
+    height: 40px;
+    gap: 0px 0px;
+    grid-template-columns: 1fr 0.1fr;
+    grid-template-areas:
+    "DiscussionTitle DiscussionUser";
+    align-content: flex-end;
+    border-bottom: 2px var(--black-color) solid;
+}
+.DiscussionTitle {
+    grid-area: DiscussionTitle;
+    padding-top: 2px;
+    padding-left: 5px;
+    align-items: center;
+    width: fit-content;
+    font-family: 'Press Start 2P', cursive;
+}
+.discussion-title-text {
+    color: var(--black-color);
+    font-size: var(--smaller-text-size);
+}
+
+.DiscussionUser {
+    grid-area: DiscussionUser;
+    padding-top: 5px;
+    padding-right: 35px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: right;
+}
+.discussion-user-text {
+    color: var(--black-color);
+}
+
+.DiscussionContent {
+    display: grid;
+    gap: 0px 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "DiscussionImage DiscussionVotes";
+}
+.DiscussionImage {
+    grid-area: DiscussionImage;
+}
+.discussion-image-element {
+    height: 100px;
+}
+
+.DiscussionVotes {
+    grid-area: DiscussionVotes;
+    display: grid;
+    grid-template-areas: "UpVote VoteCount DownVote";
+    grid-template-columns: 0fr 1fr 0fr;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+.VoteCount {
+    grid-area: VoteCount;
+    display: flex;
+    /* width: 327px; */
+    align-items: center;
+}
+
+.UpVote {
+    grid-area: UpVote;
+    display: flex;
+    align-items: center;
+}
+
+.DownVote {
+    grid-area: DownVote;
+    display: flex;
+    align-items: center;
+}
+
+.vote {
+    opacity: 20%;
+    transform: scale(0.5);
+    cursor: pointer;
+}
+
+.vote:hover {
+    animation: vote-hover-opacity 0.1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.vote.voted {
+    opacity: 80%;
+    transform: scale(0.8);
+}
+.vote.voted:hover {
+    animation: none;
+}
+
+@keyframes vote-hover-opacity {
+    50%  {transform: scale(1); opacity: 50%;}
+    100%  {transform: scale(1); opacity: 50%;}
+}
+
+.vote-count-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: var(--bigger-text-size);
+    color: var(--black-color) !important;
+    text-align: center;
+}
+
+.DiscussionFooter {
+    grid-area: DiscussionFooter;
+    display: flex;
+    align-content: center;
+    background-color: var(--black-color);
+    height: 25px;
+    cursor: pointer;
+}
+.discussion-footer-text {
+    padding-top: 3px;
+    color: var(--pale-yellow);
+    width: 100%;
+    text-align: right;
+}
+
+.discussion-no-comments {
+    background-color: #990000;
+    cursor: default;
+}
+
+.discussion-comment {
+    display: inline-grid;
+    grid-template-areas: "DiscussionCommentHeader"
+    "DiscussionCommentBody";
+    gap: 15px 0px;
+    width: calc(33% - 45px);
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    /* again. Hello. if there is a better way of doing this, don't tell me. */
+    clip-path: polygon(0px 0, calc(100% - 20px) 0px, 100% 20px, 100% 100%, 0px 100%, 0 calc(100% - 15px), 0 25px);
+    background: var(--discussion-comment-bg)  url('img/pages/discussionden/commentbg.jpg');
+}
+
+.DiscussionCommentHeader {
+    grid-area: DiscussionCommentHeader;
+    display: grid;
+    grid-template-areas: "DiscussionCommentTitle"
+    "DiscussionCommentUser";
+}
+
+.DiscussionCommentTitle {
+    grid-area: DiscussionCommentTitle;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.DiscussionCommentUser {
+    grid-area: DiscussionCommentUser;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.DiscussionCommentBody {
+    grid-area: DiscussionCommentBody;
+    font-family: 'Press Start 2P', cursive;
+    text-align: justify;
+    color: var(--black-color);
+}

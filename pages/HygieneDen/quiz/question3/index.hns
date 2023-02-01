@@ -1,0 +1,17 @@
+title:QUESTION THREE - SHE HAS A BAT
+music:sound/bgm/Lofi dryer chan beats to browse hypnospace to.ogg
+user:DryerChan
+background:#613258
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;DryerChan's status
+p:b:0:15
+s:ayaya:Remember to wash your hands 🎵🎵🎵
+p:b:0:15
+i:0:0:100%:auto:pages/HygieneDen/question3.gif:Toot
+tp:'Press Start 2P', cursive:var(--biggest-text-size):center:#121212:#FF0000:QUESTION THREE
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#F3F3F3:Doing great. Just one more because I can only make so many dryer chan gifs.<br>How many times do we use the same underwear, weebs?
+hr:#FFFFFF
+tdc:'Press Start 2P', cursive:var(--biggest-text-size):center:#FFFFFF:<br><a href="#/HygieneDen/quiz/fail">I use the shower towel for this as well</a><br><br>:<br><a href="#/HygieneDen/quiz/fail">Twice</a><br><br><br>
+tdc:'Press Start 2P', cursive:var(--biggest-text-size):center:#FFFFFF:<a href="#/HygieneDen/quiz/fail">More than twice</a><br><br>:<a href="#/HygieneDen/quiz/success">Once</a><br><br>
+hr:#FFFFFF
+p:b:0:200

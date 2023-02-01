@@ -1,0 +1,17 @@
+background-color:#BEBEC1
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;FireBug's status
+p:b:0:15
+s:chadapon:Working on my semantics manifesto
+p:b:0:15
+d:pages/DiscussionDen/characters/Alice.jpg:Alice is best girl:#UNKNOWN#:1732:-:open
+hr:var(--black-color)
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#121212:Comments:
+hr:var(--black-color)
+dc:Gamtheus:I LOVE ALICE SO MUCH. BEST GIRL
+dc:Nomephit:THE <b>WORST<b> IN ALL OF ZE
+dc:bad:That's why she's called All-Ice, because there is nobody colder than her
+dc:uwurat:Honestly I love Alice in that I love hating her
+dc:ririka:i love how the only reason alice even is there is to do math
+dc:August:<img src="pages/discussionden/discussion/automod.png"/>
+p:b:0:200

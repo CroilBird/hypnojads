@@ -1,0 +1,47 @@
+title:Discussion Den - Home
+user:FireBug
+background-color:#BEBEC1
+music:sound/bgm/Objection.ogg
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;FireBug's status
+p:b:0:15
+s:chadapon:Working on my semantics manifesto
+p:b:0:15
+i:0:0:100%:auto:pages/DiscussionDen/header.gif:Hard hitting discussion imagery
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#121212:Welcome to discussion den, where we strive to have discussions until we reach consensus, which happens all the time.
+hr:#121212
+tm:'Press Start 2P', cursive:var(--biggerest-text-size):center:#121212:How does it work?
+hr:#121212
+t:'Press Start 2P', cursive:var(--smaller-text-size):center:#121212:Submit a topic and people will comment/vote on it. At some arbitrary time when the discussion is over I call a decision based on the amount of votes there are for which side. There is the possibility of a tie but that never happens, we always end up agreeing. Have fun!
+hr:#121212
+tp:'Press Start 2P', cursive:var(--regular-text-size):center:#121212:#FF0000:SUBMISSIONS CLOSED
+t:'Press Start 2P', cursive:var(--smaller-text-size):center:#121212:Submissions and comments are closed for the forseeable future. The best girl / best boy posts caused so much traffic that Merchantsoft blocked us from sending anything but minor requests.<br><br>Apparently one of their servers literally burned down and most of the comments were lost. You can still vote on submissions.
+hr:#121212
+d:pages/DiscussionDen/characters/Alice.jpg:Alice is best girl:#UNKNOWN#:1732:6:open
+d:pages/DiscussionDen/characters/Rintarou.jpg:Rintarou Okabe is best boy:#UNKNOWN#:1731:2:open
+d:img/emotes/cerealexperiments.webp:Every day we stray further from the light of god:SimpleMan:1730:3:open
+d:pages/DiscussionDen/characters/Chili.jpg:Chili Satonaka is best girl:#UNKNOWN#:1729::open
+d:pages/DiscussionDen/characters/Luka.jpg:Luka Urushibara is best girl:#UNKNOWN#:1728::open
+d:pages/DiscussionDen/characters/Kurisu.jpg:Kurisu Makise is best girl:#UNKNOWN#:1727::open
+d:pages/DiscussionDen/characters/Faris.jpg:Faris NyanNan is best girl:#UNKNOWN#:1726::open
+d:pages/DiscussionDen/characters/Yor.jpg:Yor Forger is best girl:WakuWaku12:1725:2:open
+d:pages/DiscussionDen/characters/Ryotaro.jpg:Ryotaro Dojima is great vegetables:#UNKNOWN#:1724:36:open
+d:pages/DiscussionDen/characters/Yukiko.jpg:Yukiko Amagi is best girl:#UNKNOWN#:1723::open
+d:pages/DiscussionDen/characters/Yosuke.jpg:Yosuke Hanamura is best boy:#UNKNOWN#:1722::open
+d:pages/DiscussionDen/characters/Akane.jpg:Akane Kurashiki is best girl:#UNKNOWN#:1721::open
+d:img/emotes/picklenagito.webp:Pickle Nagito is best boy:#UNKNOWN#:1720:1:open
+d:pages/DiscussionDen/characters/regularnagito.jpg:Regular Nagito is best boy:#UNKNOWN#:1719::open
+d:pages/DiscussionDen/characters/Teddie.jpg:Teddie is best boy:#UNKNOWN#:1718::open
+d:pages/DiscussionDen/characters/Aoi.jpg:Santa is best boy:#UNKNOWN#:1717::open
+d:pages/DiscussionDen/characters/Rise.jpg:Rise Kujikawa is best girl:#UNKNOWN#:1716::open
+d:pages/DiscussionDen/characters/Pineapple.jpg:Pineapple on pizza yes or no:#UNKNOWN#:1715:11:open
+d:pages/DiscussionDen/characters/Ace.jpg:Ace is best boy:#UNKNOWN#:1714:1:open
+d:pages/DiscussionDen/characters/Mayuri.jpg:Mayuri Shiina is best girl:#UNKNOWN#:1713:1:open
+d:pages/DiscussionDen/characters/Kanji.jpg:Kanji Tatsumi is best boy:#UNKNOWN#:1712::open
+d:pages/DiscussionDen/characters/Phi.jpg:Phi is best girl:#UNKNOWN#:1711::open
+d:pages/DiscussionDen/characters/Clover.jpg:Clover is best girl:#UNKNOWN#:1710::open
+d:pages/DiscussionDen/characters/VNs.jpg:Are VNs video games?:#UNKNOWN#:1709:14:open
+d:pages/DiscussionDen/characters/K.jpg:K is best boy:#UNKNOWN#:1708::open
+d:pages/DiscussionDen/characters/Dio.jpg:Dio is best boy:#UNKNOWN#:1707::open
+t:'Press Start 2P', cursive:var(--smaller-text-size):center:#121212:## ERROR LOADING SUBJECTS ##
+p:b:0:200

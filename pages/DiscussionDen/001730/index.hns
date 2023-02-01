@@ -1,0 +1,14 @@
+background-color:#BEBEC1
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;FireBug's status
+p:b:0:15
+s:chadapon:Working on my semantics manifesto
+p:b:0:15
+d:img/emotes/cerealexperiments.webp:Every day we stray further from the light of god:SimpleMan:1730:-:open
+hr:var(--black-color)
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#121212:Comments:
+hr:var(--black-color)
+dc:SimpleMan:This has gone too far. How many of these cartoon characters will we go through?
+dc:PrincessLulu1313:We are on the verge of greatness. We are this close. We can't stop now
+dc:NotAWeeb:Shit's getting slow. I can barely view posts anymore what is going on?
+p:b:0:200

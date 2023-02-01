@@ -1,0 +1,12 @@
+title:GOOD JOB
+music:sound/bgm/Lofi dryer chan beats to browse hypnospace to.ogg
+user:DryerChan
+background:#613258
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;DryerChan's status
+p:b:0:15
+s:ayaya:Remember to wash your hands 🎵🎵🎵
+p:b:0:15
+i:0:0:100%:auto:pages/HygieneDen/success.gif:You did it. You are not a smelly person. Dryer chan is proud
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#F3F3F3:You have received Dryer-chan's blessing and will have good hygiene today
+p:b:0:200

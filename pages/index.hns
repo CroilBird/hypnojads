@@ -1,0 +1,17 @@
+title:HypnoJADS: Coolest place on the hypnospace!
+music:sound/bgm/Kusuro - Now entering dragons den (hypnospace hsm remix).ogg
+background-color:#222034
+i:0:0:100%:auto:pages/header.gif:ROTATING 3D JOE EXPERIENCE SHOWCASE
+t:'Press Start 2P', cursive;, cursive:var(--biggest-text-size):center:#DD3333:The HypnoPLACE to hypnoBE for video game critique aficionados
+t:'Press Start 2P', cursive:var(--regular-text-size):center:var(--pale-yellow):This is the Hypnospace for the Joseph Anderson FAN base! Anything else related to video game critique is welcome here as well. Got a video game? Got critique? Create a space and critique away! The sleeptime computing space is your oyster!
+i:0:0:100%:auto:pages/listingheader.png:LISTING HEADER
+l:#910816:#3D0B10:#7F0713:Joseph Anderson's personal Page:BeacoiOsfnoe:What's up weebs:BeacoiOsfnoeHome
+l:url('pages/ayaya.png'):#4C4C21:#A5A548:Anime Den:PrincessLulu1313:Anime of the month&colon; Oh no! I've Gone And Isekai'd Myself Into Some Big Honka Badonkas:AnimeDen
+l:url('pages/streamsched.png'):#7D61A6:#A985E2:Joe Stream schedule:Top_Loli:Joe streams past present and future!:JoeStreams
+l:url('pages/batknife.png'):#56514E:#77706B:Bat VS Knife:xXx|knifeLeon|xXx:Everybody loves this game:BatKnife
+l:#846E5A:#997E69:#6B5849:Discussion den:FireBug:Depends on how you define discussion:DiscussionDen
+l:#681E4F:#450A2E:#B51B7A:Hygiene Den:DryerChan:How smelly are you?:HygieneDen
+l:url('pages/fanpage.png'):#3D0B10:#7F0713:Official Joseph Anderson Fanpage:99BatMan99:DELETE THIS PAGE PLEASE:JosephAnderson
+l:#9E000A:#810605:#9E000A:joms:joms:joms:joms
+l:#681E4F:#450A2E:#B51B7A:Hypnojads Credits:CrudeOil:Hi jads:Credits
+p:b:0:400

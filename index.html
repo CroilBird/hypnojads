@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1658709774">
+
+    <title>HypnoJADS: Dream of touching grass</title>
+</head>
+<body>
+    <audio id="musicAudio" autoplay loop hidden muted></audio>
+    <div class="window">
+        <div class="controls">
+            <div class="Icon">
+                <img class="Icon-img" src="img/ui/icon.png" alt="weeb spotted"/>
+            </div>
+            <div class="TitleBar">
+                <span class="digital title-text">HYPNOJADS EXPLORER</span>
+            </div>
+            <div class="UrlBar">
+                <div id="homeBtn" class="Home">
+                    <img class="Icon-img" src="img/ui/home.png" alt="home" onclick="navigate('')"/>
+                </div>
+                <div id="url" class="URL digital url-text"></div>
+                <div class="Refresh">
+                    <img style="cursor: pointer" onclick="refresh()" alt="refresh" src="img/ui/refresh.png"/>
+                </div>
+            </div>
+            <div class="RefreshIcon"></div>
+            <div class="Minimize"></div>
+        </div>
+        <div class="inner">
+            <div class="Lower-Controls">
+                <div id="backBtn" onclick="back()" class="back disabled">
+                    <img class="" alt="go back" src="img/ui/arrow.png"/>
+                </div>
+                <div id="fwdBtn" onclick="fwd()" class="fwd disabled">
+                    <img class="fwd-img" alt="go forward" src="img/ui/arrow.png"/>
+                </div>
+                <!-- <div id="stamp" class="stamp">
+                    <img src="img/ui/wtf.png"/>
+                </div> -->
+                <div class="ban"></div>
+            </div>
+            <div class="Title">
+                <span id="page-title" class="digital page-title"></span>
+            </div>
+            <div class="User">
+                <span id="user-name" class="digital user-name"></span>
+            </div>
+            <div onclick="showHelp()" class="InfoCtrl">
+                <img alt="help" src="img/ui/info.png"/>
+            </div>
+            <div id="outerBody" class="Body">
+                <div id="body" class="InnerBody"></div>
+            </div>
+        </div>
+        <div class="scrollbar-container">
+            <div class="scrollbar-arrow-top"></div>
+            <div class="scrollbar-scroller"></div>
+            <div class="scrollbar-arrow-bot"></div>
+        </div>
+        <div id="audioCtrlDiv" onmouseenter="openSoundControls()" onmouseleave="closeSoundControls()" class="audio-control">
+            <div id="audioCtrlPlayer" class="AudioCtrlPlayer">
+                <canvas id="audioCtrlCanvas" class="audio-ctrl-canvas"></canvas>
+                <img id="audioCtrlImage" class="audio-ctrl-image" src="img/ui/sound-on.png" onclick="toggleAudio()" alt="make it stop">
+            </div>
+            <div id="audioCtrlVolumeInfo" class="AudioCtrlVolumeInfo">
+                <div class="AudioInfo marquee">
+                    <div><a class="audio-info-text digital" id="audioInfo" target="_blank" class="digital"></a></div>
+                </div>
+                <div class="AudioVolumeControl">
+                    <input type="range" min="0" max="100" value="50" class="audio-slider" id="volumeControl" oninput="changeVolume()">
+                </div>
+            </div>
+        </div>
+        <div id="infoDiv" class="info hidden">
+            <div class="InfoTitle"><span id="info-title" class="digital info-title-text">test title</span></div>
+            <div class="InfoContent">
+                <img class="info-warning-image" src="img/ui/alert.png" alt="warning label oh no what did you do">
+                <span id="info-content" class="digital info-content-text"></span>
+            </div>
+            <div id="info-btn-outer" class="info-bttn">
+                <div class="info-bttn-inner">
+                    <span id="info-btn" class="digital info-btnn-text"></span>
+                </div>
+            </div>
+            <div class="info-close"><img class="info-close-buttn" src="img/ui/useless-close-button.png" alt="this does nothing"></div>
+        </div>
+    </div>
+
+    <script src="index.js?v=1658709774"></script>
+</body>
+</html>

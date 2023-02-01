@@ -1,0 +1,17 @@
+title:QUESTION ONE - I BELIEVE IN YOU
+music:sound/bgm/Lofi dryer chan beats to browse hypnospace to.ogg
+user:Dryer chan
+background:#613258
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;Dryer chan's status
+p:b:0:15
+s:ayaya:Remember to wash your hands 🎵🎵🎵
+p:b:0:15
+i:0:0:100%:auto:pages/HygieneDen/question1.gif:No. No. I know what you're thinking. No. It's just a dirty towel
+tp:'Press Start 2P', cursive:var(--biggest-text-size):center:#121212:#FF0000:QUESTION ONE
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#F3F3F3:How many times should you use the same towel to dry after taking a shower?
+hr:#FFFFFF
+tdc:'Press Start 2P', cursive:var(--biggest-text-size):center:#FFFFFF:<br><a href="#/HygieneDen/quiz/question2">Just once</a><br><br>:<br><a href="#/HygieneDen/quiz/fail">2 - 4 times</a><br><br>
+tdc:'Press Start 2P', cursive:var(--biggest-text-size):center:#FFFFFF:<br><br><a href="#/HygieneDen/quiz/fail">5+ times</a><br><br>:<br><a href="#/HygieneDen/quiz/fail">The towel I use is more human than towel</a><br><br>
+hr:#FFFFFF
+p:b:0:200

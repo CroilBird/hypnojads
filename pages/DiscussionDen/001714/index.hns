@@ -1,0 +1,13 @@
+background-color:#BEBEC1
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;FireBug's status
+p:b:0:15
+s:chadapon:Working on my semantics manifesto
+p:b:0:15
+d:pages/DiscussionDen/characters/ace.jpg:Ace is best boy:#UNKNOWN#:1714:-:open
+hr:var(--black-color)
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#121212:Comments:
+hr:var(--black-color)
+dc:CrudeOil:The random number generator decided this was one of the listings so don't blame me. Here's the one message on JADS I could find -->
+dc:SparkFlow:Ace best boy
+p:b:0:200

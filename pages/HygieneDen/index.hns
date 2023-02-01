@@ -1,0 +1,14 @@
+title:Squeakiest place on the hypnospace
+music:sound/bgm/Lofi dryer chan beats to browse hypnospace to.ogg
+user:DryerChan
+background:#613258
+p:b:0:25
+t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;DryerChan's status
+p:b:0:15
+s:ayaya:Remember to wash your hands 🎵🎵🎵
+p:b:0:15
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#F3F3F3:You have been visited by Dryer-chan
+i:0:0:100%:auto:pages/HygieneDen/banner.gif:Dryer-chan Dryer-chan. Dryer-chan who we all stan. Go ask baldur her biggest fan. Please buy a plunger if you can.
+t:'Press Start 2P', cursive:var(--bigger-text-size):center:#F3F3F3:Good hygiene and soft laundry will come to you but only if you do the hygiene quiz
+i:280px:0:50%:auto:pages/HygieneDen/quizbutton.gif:Start the quiz:#/HygieneDen/quiz/question1
+p:b:0:200
