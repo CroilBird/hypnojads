@@ -1,5 +1,5 @@
 title:HypnoJADS: Coolest place on the hypnospace!
-music:sound/bgm/Kusuro - Now entering dragons den (hypnospace hsm remix).ogg
+music:sound/bgm/Kusoro - Now entering dragons den (hypnospace hsm remix).ogg
 background-color:#222034
 i:0:0:100%:auto:pages/header.gif:ROTATING 3D JOE EXPERIENCE SHOWCASE
 t:'Press Start 2P', cursive;, cursive:var(--biggest-text-size):center:#DD3333:The HypnoPLACE to hypnoBE for video game critique aficionados
@@ -15,3 +15,4 @@ l:url('pages/fanpage.png'):#3D0B10:#7F0713:Official Joseph Anderson Fanpage:99Ba
 l:#9E000A:#810605:#9E000A:joms:joms:joms:joms
 l:#681E4F:#450A2E:#B51B7A:Hypnojads Credits:CrudeOil:Hi jads:Credits
 p:b:0:400
+i:calc(100% - 30px):0px:30px:30px:img/emotes/jphsnail.webp:snail:#/GoodPage

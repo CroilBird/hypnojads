@@ -1,11 +1,11 @@
 title:HypnoJADS credits
 user:Crude Oil
-music:sound/bgm/Kusuro - Now entering dragons den (hypnospace hsm remix).ogg
+music:sound/bgm/Kusoro - Now entering dragons den (hypnospace hsm remix).ogg
 background-color:#222034
 p:b:0:25
 t:'Press Start 2P', cursive:var(--regular-text-size):top left:var(--pale-yellow):&nbsp;Crude Oil's status
 p:b:0:15
-s:jphsnail:Date&colon; Tue Jul 5 12&colon;51&colon;45 2022 +0200 Message&colon;&nbsp;First commit
+s:jphsnail:hey hey
 p:b:0:15
 hr:var(--pale-yellow)
 t:'Press Start 2P', cursive:var(--regular-text-size):center:var(--pale-yellow):Models (.blend files!)
@@ -15,8 +15,8 @@ p:b:0:100
 hr:var(--pale-yellow)
 t:'Press Start 2P', cursive:var(--regular-text-size):center:var(--pale-yellow):Songs (click to open, ctrl+s or whatever to download)
 hr:var(--pale-yellow)
-t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="sound/bgm/Kusuro - Now entering dragons den (hypnospace hsm remix).ogg">Kusuro - Now entering dragons den (hypnospace hsm remix)</a><br>
-t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="sound/bgm/Kusuro - 20 hours no sleep (hypnospace hsm remix).ogg">Kusuro - 20 hours no sleep (hypnospace hsm remix)</a><br>
+t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="sound/bgm/Kusoro - Now entering dragons den (hypnospace hsm remix).ogg">Kusoro - Now entering dragons den (hypnospace hsm remix)</a><br>
+t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="sound/bgm/Kusoro - 20 hours no sleep (hypnospace hsm remix).ogg">Kusoro - 20 hours no sleep (hypnospace hsm remix)</a><br>
 t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="sound/bgm/ayaya.ogg">ayaya</a><br>
 t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="sound/bgm/Bat vs Knife.ogg">Crude Oil - Bat vs Knife</a><br>
 t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="sound/bgm/Objection.ogg">Crude Oil - Objection</a><br>
@@ -26,7 +26,7 @@ p:b:0:100
 hr:var(--pale-yellow)
 t:'Press Start 2P', cursive:var(--regular-text-size):center:var(--pale-yellow):Images
 hr:var(--pale-yellow)
-t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="pages/stuff/hypnospace models.7z">Click to download .7z file with most images</a><br>
+t:'Press Start 2P', cursive:var(--smaller-text-size):center:var(--pale-yellow):<a target="_blank" href="pages/stuff/images.7z">Click to download .7z file with most images</a><br>
 p:b:0:100
 hr:var(--pale-yellow)
 t:'Press Start 2P', cursive:var(--regular-text-size):center:var(--pale-yellow):Source code
